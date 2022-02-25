@@ -24,11 +24,11 @@ class Home : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        var view = inflater.inflate(R.layout.fragment_home, container, false)
-//        recyclerView = view.findViewById(R.id.recyclerStory)
-//
-//        val adapter = StoryAdapter(view.context, getAllStories())
-//        recyclerView.adapter = adapter
+        var view = inflater.inflate(R.layout.fragment_home, container, false)
+        recyclerView = view.findViewById(R.id.recyclerStory)
+
+        val adapter = StoryAdapter(view.context, getAllStories())
+        recyclerView.adapter = adapter
 
         return view
     }
