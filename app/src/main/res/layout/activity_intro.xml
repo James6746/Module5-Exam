@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="15dp"
             android:layout_marginBottom="20dp"
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
@@ -38,6 +38,8 @@
             android:orientation="horizontal">
 
             <TextView
+                android:padding="3dp"
+                android:textStyle="bold"
                 android:id="@+id/tv_skip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,18 +48,21 @@
                 android:textColor="@color/white" />
 
             <me.relex.circleindicator.CircleIndicator3
+                android:layout_gravity="center"
                 android:id="@+id/circleIndicator"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="20dp"
                 android:theme="@style/ThemeOverlay.AppCompat.Light"
-                app:ci_height="6dp"
-                app:ci_margin="2dp"
-                app:ci_width="6dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:ci_height="8dp"
+                app:ci_margin="4dp"
+                app:ci_width="8dp"
+                app:ci_animator="@animator/animator"
+                 />
 
             <TextView
+                android:padding="3dp"
+                android:textStyle="bold"
                 android:textSize="18sp"
                 android:id="@+id/tv_next"
                 android:layout_width="wrap_content"
